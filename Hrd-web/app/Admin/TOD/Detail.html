@@ -1,0 +1,27 @@
+﻿<div class="col sm-12" ng-if="disDetail.length==0">
+    <div>No data</div>
+</div>
+<div class="col sm-12" ng-if="disDetail.length>0">
+    <div class="row">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default"  ng-repeat="item in disDetail">
+                <div class="panel-heading">
+                    <h1 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#{{item._id}}" ng-bind="item.name">Collapsible list group</a>
+                    </h1>
+                </div>
+                <div class="panel-body" id="{{item._id}}">
+                    <div ng-bind="item.description"></div>
+                    <div ng-bind="item.symptoms"></div>
+                    <div ng-bind="item.diagnosed"></div>
+                    <div ng-bind="item.prevenation"></div>
+                    <div ng-bind="item.treatment"></div>
+                </div>
+                <div class="panel-footer clearfix">
+                    View Area:
+                    <div ng-bind="item.viewarea"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

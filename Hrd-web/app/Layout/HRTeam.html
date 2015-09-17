@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+</head>
+<body ng-controller="LegalDisclaimerCtrl">
+
+    <div>
+        <div class="modal-header">
+           <button type="button" class="pull-right close" ng-click="close()">×</button>
+            <h4 class="modal-title">CT BLM</h4>
+        </div>
+
+        <div class="modal-body">
+            <button class="pull-right hidden-print" ng-click="showPrint('printArea')" style="margin-bottom: 18px;">
+               <span class="fa fa-print fa-2x"></span>
+            </button>
+            <div id="printArea" class="popupScroll">
+                <ul>
+                  <li><b>CT Technical Support</b></li>
+                  <li>Phone: 800-435-0808</li>
+                  <li>Email:<a href="mailto:ct_support@ctadvantage.com"> ct_support@ctadvantage.com</a></li>
+                   </ul>
+                <ul data-ng-repeat=" value in ContactDetails">
+                    <li><b>{{value.TeamName}}</b></li>
+                    <li ng-show="!!value.PhoneNumber">Phone: {{value.PhoneNumber}}</li>
+                    <li ng-show="!!value.FaxNumber">Fax: {{value.FaxNumber}}</li>
+                    <li>Email:<a href="mailto:{{value.Email}}"> {{value.Email}}</a></li>
+
+                </ul>
+                  <ul>
+                  <li><b>hCue Support:Inside U.S</b></li>
+                  <li>Phone: 800-435-0808</li>
+                  <li>Email:<a href="mailto:support@hCue.com"> support@hCue.com</a></li>
+                   </ul>
+                  <ul>
+                  <li><b>CT Service of Process</b></li>
+                  <li>Phone: 866-925-9916</li>
+                   <li>Fax: 925-287-9801</li>
+                  <li>Email:<a href="mailto:CLS-CTAfterHoursTeam@wolterskluwer.com"> CLS-CTAfterHoursTeam@wolterskluwer.com</a></li>
+                   </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="close()">Close</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<base href="/">-->
+    <title>Index</title>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="/web/bower_components/ngprogress/ngProgress.css">-->
+    <link href="Scripts/ngprogress/ngProgress.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <!--<script type="text/javascript"  data-src="">    </script>-->
+    <!--<script type="text/javascript"  src="http://code.jquery.com/color/jquery.color-2.1.2.js" />-->
+    <!--<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>-->
+    <script src="Scripts/jquery-2.1.4.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <!--<script src="Scripts/angular.min.js"></script>-->
+
+    <!--<script src="Scripts/angular-route.min.js"></script>-->
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="Scripts/ngprogress/build/ngProgress.min.js"></script>
+    <script src="Scripts/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
+    <script src="Scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/angular-sanitize.min.js"></script>
+
+   
+
+    <script src="Layout/LayoutModule.js"></script>
+    <script src="Layout/ShellCtrl.js"></script>
+    <script src="Layout/NavbarCtrl.js"></script>
+
+    <script src="Layout/FooterModule.js"></script>
+    <script src="Layout/FooterCtrl.js"></script>
+
+    <script src="Home/homeModule.js"></script>
+    <script src="Home/homeState.js"></script>
+    <script src="Home/homeController.js"></script>
+
+    <!--Adminstrator pages-->
+    <script src="Admin/adminModule.js"></script>
+    <script src="Admin/adminState.js"></script>
+    <script src="Admin/adminController.js"></script>
+
+    <script src="Admin/TOD/todModule.js"></script>
+    <script src="Admin/TOD/todState.js"></script>
+    <script src="Admin/TOD/todController.js"></script>
+
+    <script src="CoreModule.js"></script>
+    <script src="app.js"></script>
+    <script src="appState.js"></script>
+</head>
+<body ng-app="hrp" class="container">
+    <!-- MAIN CONTENT -->
+    <div data-ng-include="'Layout/Shell.html'"></div>
+    <!--<div >-->
+    <!--&lt;!&ndash; THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== &ndash;&gt;-->
+    <!--<div ui-view></div>-->
+    <!--</div>-->
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿<div class="container">
+    <div class="row">
+
+        <div class="col-sm-2" ui-view="listOfTod">
+            <div ng-repeat="diseases in typeOfDiseases">
+                <a ui-sref="tod.diseases({id:'{{diseases.did}}'})" href="#" data-did="{{diseases._id}}">{{diseases.name}}</a>
+            </div>
+        </div>
+        <div class="col-sm-10" ui-view="detailOfTod">
+            <h1>typeofdiseases.html</h1>
+        </div>
+    </div>
+</div>
